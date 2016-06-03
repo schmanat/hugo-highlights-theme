@@ -1,0 +1,143 @@
+# Site settings
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Highlights"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Your Name"
+  description = "Your Description"
+
+  # For a static site its no possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitiors can send up to a 1000 eamails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email form www.formspree.io
+  # - Thats all. Enjoy mailing!
+  email = "your@mail.com"
+
+  # Hero Section
+  [params.hero]
+    title = "Highlights"
+    description = "a fun litte { responsive } single Pager by [HTML5UP](//html5up.net)"
+    buttonText = "begin"
+
+  # about section
+  [params.about]
+    enable = true
+    title = "Who am I"
+    description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+    buttonText = "next"
+    # the picture is storead at static/images/
+    picture = "pic01.jpg"
+
+  # skill section
+  [params.skill_list]
+    enable = true
+    title = "Stuff I do"
+    description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
+    buttonText = "next"
+    # the picture is storead at static/images/
+    picture = "pic02.jpg"
+
+    [[params.skills]]
+      icon = "fa-camera-retro"
+      title = "Magna Etiam"
+
+    [[params.skills]]
+      icon = "fa-pencil"
+      title = "Lorem Ipsum"
+
+    [[params.skills]]
+      icon = "fa-code"
+      title = "Nulla Tempus"
+
+    [[params.skills]]
+      icon = "fa-coffee"
+      title = "Sed Feugiat"
+  # infos section
+  [params.infos]
+    enable = true
+    title = "One more thing"
+    description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+    # the picture is storead at static/images/
+    picture = "pic03.jpg"
+
+  # footer section
+  # this section includes
+  #
+  # - the contact form
+  # - social icons
+  #
+  # It's possible to disable the hole footer or the the disable only social icons or contact form
+
+  [params.footer]
+    enable = true
+    title = "Get in Touch"
+
+    # contact form
+    [params.footer.contact]
+      enable = true
+
+    [params.footer.contact.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttonText = "send message"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Dribbble"
+        icon = "fa-dribbble"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "#"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© Untitled"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+      [[params.footer.copyright.notice]]
+        text = "Demo Images: [Unsplash](//unsplash.com/)"

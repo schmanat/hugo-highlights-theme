@@ -1,0 +1,9 @@
+{{ "<!-- Scripts -->" | safeHTML }}
+  <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+  <script src="{{ .Site.BaseURL }}js/jquery.scrollex.min.js"></script>
+  <script src="{{ .Site.BaseURL }}js/jquery.scrolly.min.js"></script>
+  <script src="{{ .Site.BaseURL }}js/skel.min.js"></script>
+  <script src="{{ .Site.BaseURL }}js/util.js"></script>
+  {{ "<!-- [if lte IE 8 ]]> <script src=" | safeHTML }}"{{ .Site.BaseURL }}{{ "js/ie/respond.min.js\"></script><![endif] -->" | safeHTML }}
+  <script src="{{ .Site.BaseURL }}js/main.js"></script>
+  {{ template "_internal/google_analytics.html" . }}

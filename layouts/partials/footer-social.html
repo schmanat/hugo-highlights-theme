@@ -1,0 +1,12 @@
+<footer>
+  <ul class="icons">
+    {{ range .Site.Params.footer.social }}
+      <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
+    {{ end }}
+  </ul>
+  <ul class="copyright">
+    {{ range .Site.Params.footer.copyright.notice }}
+      <li>{{ .text | markdownify }}</li>
+    {{ end }}
+  </ul>
+</footer>

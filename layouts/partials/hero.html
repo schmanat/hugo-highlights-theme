@@ -1,0 +1,12 @@
+{{ "<!-- Hero -->" | safeHTML}}
+<section id="header">
+  <header class="major 1">
+    <h1>{{ with .Site.Params.hero.title }} {{ . | markdownify }} {{ end }}</h1>
+    <p>{{ with .Site.Params.hero.description }} {{ . | markdownify }} {{ end }}</p>
+  </header>
+  <div class="container">
+    <ul class="actions">
+      <li><a href="#about" class="button special scrolly">{{ with .Site.Params.hero.buttonText }} {{ . | markdownify }} {{ end }}</a></li>
+    </ul>
+  </div>
+</section>

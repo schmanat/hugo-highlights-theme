@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+{{ "<!--" | safeHTML}}
+	Highlights by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{{ "-->" | safeHTML }}
+<html>
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+	<body>
+		{{ partial "hero.html" . }}
+
+		{{ if .Site.Params.about.enable }}
+			{{ partial "about.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.skill_list.enable }}
+			{{ partial "skills.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.infos.enable }}
+			{{ partial "infos.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.footer.enable }}
+
+			{{"<!-- Footer -->" | safeHTML}}
+				<section id="footer">
+					{{ if .Site.Params.footer.contact.enable }}
+						{{ partial "footer-contact.html" . }}
+					{{ end }}
+
+					{{ if .Site.Params.footer.social_list.enable }}
+						{{ partial "footer-social.html" . }}
+					{{ end }}
+			  </section>
+		{{ end }}
+
+		{{ partial "scripts.html" . }}
+	</body>
+</html>
