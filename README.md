@@ -15,7 +15,7 @@ This theme provieds the following features
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-agency-theme
+    $ git clone https://github.com/schmanat/hugo-highlights-theme
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -23,7 +23,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 After installing the Hugo Highlights Theme it requires a just few more steps to get your site running.
 
 ### The config file
-Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-agency-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/schmanat/hugo-highlights-theme/tree/master/exampleSite/config.toml)
+Take a look inside the [`exampleSite`](//github.com/schmanat/hugo-highlights-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/schmanat/hugo-highlights-theme/tree/master/exampleSite/config.toml)
 
 ### Change the background images
 It's possible to change the background files for every section (about, services, ... ). To do this you could set every image in the [`config.toml`](//github.com/schmanat/hugo-highlights-theme/tree/master/exampleSite/config.toml) of your site. The files are stored at `static/images/`.
