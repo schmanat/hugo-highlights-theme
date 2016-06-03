@@ -3,16 +3,16 @@
 
 name = "Highlights"
 license = "Creative Commons Attribution 3.0 Unported"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "//hugo.schman.at/themes/highlights"
+licenselink = "https://github.com/schmanat/hugo-highlights-theme/blob/master/LICENSE.md"
+description = "a one page site for gohugo.io created by html5up"
+homepage = ""
 tags = ["portfolio", "onepage", "one page", "contact form", "google analytics"]
-features = ["", ""]
+features = ["onepage", "one page", "contact form", "google analytics"]
 min_version = 0.15
 
 [author]
   name = "Manuel Schneider"
-  homepage = "//schman.at/hugo"
+  homepage = "//schman.at"
 
 # If porting an existing theme
 [original]
