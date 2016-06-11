@@ -28,7 +28,7 @@ googleAnalytics = ""
   # - set your email address under 'email' below
   # - upload the generated site to your server
   # - send a dummy email to yourself to confirm your account
-  # - click the confirmation link in the email form www.formspree.io
+  # - click the confirmation link in the email from www.formspree.io
   # - That's all. Enjoy mailing!
   email = "your@mail.com"
 
