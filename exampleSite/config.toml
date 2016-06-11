@@ -19,17 +19,17 @@ googleAnalytics = ""
   name = "Your Name"
   description = "Your Description"
 
-  # For a static site its no possible to provide a contact form. The contact form uses
+  # For a static site it's not possible to provide a contact form. The contact form uses
   # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
-  # Visitiors can send up to a 1000 eamails each month
+  # Visitors can send up to a 1000 emails each month
   #
   # How to setup formspree
   #
   # - set your email address under 'email' below
   # - upload the generated site to your server
-  # - send a dummy email yourself to confirm your account
-  # - click the confirm link in the email form www.formspree.io
-  # - Thats all. Enjoy mailing!
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email form www.formspree.io
+  # - That's all. Enjoy mailing!
   email = "your@mail.com"
 
   # Hero Section
@@ -85,7 +85,7 @@ googleAnalytics = ""
   # - the contact form
   # - social icons
   #
-  # It's possible to disable the hole footer or the the disable only social icons or contact form
+  # It's possible to disable the whole footer or disable only social icons or contact form
 
   [params.footer]
     enable = true
