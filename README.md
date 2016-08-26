@@ -2,7 +2,7 @@
 
 Highlights is a simple one page site originally created by [HTML5UP](http://html5up.net). This Hugo theme is a port of theme.
 All the information for creating the site is stored at the [config.toml](https://raw.githubusercontent.com/schmanat/hugo-highlights-theme/master/exampleSite/config.toml).
-This theme provieds the following features
+This theme provides the following features
 
 * contact form (via formspree.io)
 * Google Analytics
