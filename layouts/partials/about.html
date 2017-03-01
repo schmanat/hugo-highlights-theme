@@ -3,7 +3,7 @@
   <section id="about" class="main special">
     <div class="container">
       {{ if eq .Site.Params.backgroundpersection true }}
-        <span class="image fit primary"><img src="images/{{ with .Site.Params.infos.picture }}{{ . }}{{ end }}" alt="" /></span>
+        <span class="image fit primary"><img src="images/{{ with .Site.Params.about.picture }}{{ . }}{{ end }}" alt="" /></span>
       {{ end }}
       <div class="content">
         <header class="major">
