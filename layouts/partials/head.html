@@ -9,3 +9,4 @@
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 {{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=" | safeHTML }}"{{ .Site.BaseURL }}{{ "css/ie8.css\" /><![endif]-->" | safeHTML }}
 {{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=" | safeHTML }}"{{ .Site.BaseURL }}{{ "css/ie9.css\" /><![endif]-->" | safeHTML }}
+{{- partial "head_custom.html" . }}
