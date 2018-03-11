@@ -1,12 +1,14 @@
-{{ "<!-- Hero -->" | safeHTML}}
+{{ "<!-- header -->" | safeHTML}}
 <section id="header">
   <header class="major 1">
-    <h1>{{ with .Site.Params.hero.title }} {{ . | markdownify }} {{ end }}</h1>
-    <p>{{ with .Site.Params.hero.description }} {{ . | markdownify }} {{ end }}</p>
+    <h1>{{ with $.block.title }} {{ . | markdownify }} {{ end }}</h1>
+    <p>{{ with $.block.description }} {{ . | markdownify }} {{ end }}</p>
   </header>
   <div class="container">
     <ul class="actions">
-      <li><a href="#about" class="button special scrolly">{{ with .Site.Params.hero.buttontext }} {{ . | markdownify }} {{ end }}</a></li>
+      {{ if .next }}
+        <li><a href="#{{.next.id}}" class="button special scrolly">{{ with .block.buttontext }}{{ . | markdownify }}{{ end }}</a></li>
+      {{ end }}
     </ul>
   </div>
 </section>

@@ -1,0 +1,29 @@
+{{ print "<!-- " .block.id " -->" | safeHTML }}
+<section id="{{.block.id}}" class="main special">
+  <div class="container">
+    {{ if eq .params.backgroundpersection true }}
+      <span class="image fit primary"><img src="images/{{ with .block.picture }}{{ . }}{{ end }}" alt="" /></span>
+    {{ end }}
+    <div class="content">
+      <header class="major">
+        <h2>{{ with .block.title }}{{ . | markdownify }}{{ end }}</h2>
+      </header>
+      <p>{{ with .block.description }}{{ . | markdownify }}{{ end }}</p>
+      <form method="post" action="//formspree.io/{{ with .params.email }}{{.}}{{ end }}">
+        <div class="row uniform">
+          <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="{{ with .block.form.name }}{{ . }}{{ end }}" /></div>
+          <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="{{ with .block.form.email }}{{ . }}{{ end }}" /></div>
+          <div class="12u$"><textarea name="message" id="message" placeholder="{{ with .block.form.message }}{{ . }}{{ end }}" rows="4"></textarea></div>
+          <div class="12u$">
+            <ul class="actions">
+              <li><input type="submit" value="{{ with .block.form.buttontext }}{{ . }}{{ end }}" class="special" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+    {{ if .next }}
+      <a href="#{{.next.id}}" class="goto-next scrolly">{{ with .block.buttontext }}{{ . | markdownify }}{{ end }}</a>
+    {{ end }}
+  </div>
+</section>

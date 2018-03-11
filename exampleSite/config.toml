@@ -37,15 +37,17 @@ googleAnalytics = ""
   # If it's disabled you could change the background to overwrite the bg.png and overlay.png to set the background.
   backgroundpersection = true
 
-  # Hero Section
+  # hero Section
   [params.hero]
+    type = "hero"
     title = "Highlights"
     description = "a fun litte { responsive } single Pager by [HTML5UP](//html5up.net)"
     buttontext = "begin"
 
   # about section
-  [params.about]
-    enable = true
+  [[params.block]]
+    id = "about"
+    type = "text"
     title = "Who am I"
     description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
     buttontext = "next"
@@ -53,58 +55,68 @@ googleAnalytics = ""
     picture = "pic01.jpg"
 
   # skill section
-  [params.skill_list]
-    enable = true
+  [[params.block]]
+    id = "skills"
+    type = "list"
     title = "Stuff I do"
     description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
     buttontext = "next"
     # the picture is storead at static/images/
     picture = "pic02.jpg"
 
-    [[params.skills]]
+    [[params.block.item]]
       icon = "fa-camera-retro"
       title = "Magna Etiam"
 
-    [[params.skills]]
+    [[params.block.item]]
       icon = "fa-pencil"
       title = "Lorem Ipsum"
 
-    [[params.skills]]
+    [[params.block.item]]
       icon = "fa-code"
       title = "Nulla Tempus"
 
-    [[params.skills]]
+    [[params.block.item]]
       icon = "fa-coffee"
       title = "Sed Feugiat"
+
   # infos section
-  [params.infos]
-    enable = true
+  [[params.block]]
+    id = "infos"
+    type = "text"
     title = "One more thing"
     description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
     # the picture is storead at static/images/
     picture = "pic03.jpg"
 
-  # footer section
-  # this section includes
-  #
-  # - the contact form
-  # - social icons
-  #
-  # It's possible to disable the whole footer or disable only social icons or contact form
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is storead at static/images/
+#    picture = "pic04.jpg"
 
-  [params.footer]
-    enable = true
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
     title = "Get in Touch"
+    picture = "pic05.jpg"
 
-    # contact form
-    [params.footer.contact]
-      enable = true
-
-    [params.footer.contact.form]
+    [params.block.form]
       name = "Name"
       email = "Your Email"
       message = "Your Message"
       buttontext = "send message"
+
+  # footer section
+  # this section includes last block and social icons
+
+  [params.footer]
+    enable = true
 
     # social icons
     [params.footer.social_list]
