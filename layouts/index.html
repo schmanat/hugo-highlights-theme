@@ -9,32 +9,25 @@
 		{{ partial "head.html" . }}
 	</head>
 	<body>
-		{{ partial "hero.html" . }}
-
-		{{ if .Site.Params.about.enable }}
-			{{ partial "about.html" . }}
-		{{ end }}
-
-		{{ if .Site.Params.skill_list.enable }}
-			{{ partial "skills.html" . }}
-		{{ end }}
-
-		{{ if .Site.Params.infos.enable }}
-			{{ partial "infos.html" . }}
-		{{ end }}
-
-		{{ if .Site.Params.footer.enable }}
-
-			{{"<!-- Footer -->" | safeHTML}}
+		{{ $list := .Site.Params.block }}
+		{{ partial "hero.html" (dict "block" .Site.Params.hero "params" $.Site.Params "next" (index $list 0)) }}
+		{{ range $index, $element := $list }}
+			{{ $last := eq $index (sub (len $list) 1) }}
+			{{ if and $.Site.Params.footer.enable $last }}
+				{{"<!-- Footer -->" | safeHTML}}
 				<section id="footer">
-					{{ if .Site.Params.footer.contact.enable }}
-						{{ partial "footer-contact.html" . }}
+			{{ end }}
+			{{ if $last }}
+				{{ partial (print $element.type ".html") (dict "block" $element "params" $.Site.Params) }}
+			{{ else }}
+				{{ partial (print $element.type ".html") (dict "block" $element "params" $.Site.Params "next" (index $list (add $index 1))) }}
+			{{ end }}
+			{{ if and $.Site.Params.footer.enable $last }}
+					{{ if $.Site.Params.footer.social_list.enable }}
+						{{ partial "footer-social.html" $.Site.Params.footer }}
 					{{ end }}
-
-					{{ if .Site.Params.footer.social_list.enable }}
-						{{ partial "footer-social.html" . }}
-					{{ end }}
-			  </section>
+				</section>
+			{{ end }}
 		{{ end }}
 
 		{{ partial "scripts.html" . }}

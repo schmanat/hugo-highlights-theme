@@ -1,0 +1,25 @@
+{{ print "<!-- " .block.id " -->" | safeHTML }}
+<section id="{{.block.id}}" class="main special">
+  <div class="container">
+    {{ if eq .params.backgroundpersection true }}
+      <span class="image fit primary"><img src="images/{{ with .block.picture }}{{ . }}{{ end }}" alt="" /></span>
+    {{ end }}
+    <div class="content">
+      <header class="major">
+        <h2>{{ with .block.title}}{{ . | markdownify }}{{ end }}</h2>
+      </header>
+      <p>{{ with .block.description}}{{ . | markdownify }}{{ end }}</p>
+      <ul class="icons-grid">
+        {{ range .block.item }}
+          <li>
+            <span class="icon major {{ .icon }}"></span>
+            <h3>{{ .title }}</h3>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ if .next }}
+      <a href="#{{.next.id}}" class="goto-next scrolly">{{ with .block.buttontext }}{{ . | markdownify }}{{ end }}</a>
+    {{ end }}
+  </div>
+</section>
