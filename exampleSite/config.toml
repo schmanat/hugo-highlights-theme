@@ -51,7 +51,7 @@ googleAnalytics = ""
     title = "Who am I"
     description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
     buttontext = "next"
-    # the picture is storead at static/images/
+    # the picture is stored at static/images/
     picture = "pic01.jpg"
 
   # skill section
@@ -61,7 +61,7 @@ googleAnalytics = ""
     title = "Stuff I do"
     description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
     buttontext = "next"
-    # the picture is storead at static/images/
+    # the picture is stored at static/images/
     picture = "pic02.jpg"
 
     [[params.block.item]]
@@ -86,7 +86,7 @@ googleAnalytics = ""
     type = "text"
     title = "One more thing"
     description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
-    # the picture is storead at static/images/
+    # the picture is stored at static/images/
     picture = "pic03.jpg"
 
 #  # custom section
@@ -96,7 +96,7 @@ googleAnalytics = ""
 #    type = "custom"
 #    title = "Don't forget"
 #    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
-#    # the picture is storead at static/images/
+#    # the picture is stored at static/images/
 #    picture = "pic04.jpg"
 
   # contact form
