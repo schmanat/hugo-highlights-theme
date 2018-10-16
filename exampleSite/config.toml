@@ -34,7 +34,7 @@ googleAnalytics = ""
 
   # If this param is set to true, every section gets an own background image (located at static/images)
   # to change the image you could use the param picture on every section.
-  # If it's disabled you could change the background to overwrite the bg.png and overlay.png to set the background.
+  # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
   backgroundpersection = true
 
   # hero Section
