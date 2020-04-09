@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="{{ with .Site.Params.description }} {{ . }} {{ end }}">
 <meta name="author" content="{{ with .Site.Params.name }} {{ . }} {{ end }}">
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 {{ "<!-- [if lte IE 8 ]]> <script src=" | safeHTML }}"{{ .Site.BaseURL }}{{ "js/ie/html5shiv.js\"></script><![endif] -->" | safeHTML }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 {{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=" | safeHTML }}"{{ .Site.BaseURL }}{{ "css/ie8.css\" /><![endif]-->" | safeHTML }}
