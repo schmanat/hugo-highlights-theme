@@ -65,18 +65,22 @@ googleAnalytics = ""
     picture = "pic02.jpg"
 
     [[params.block.item]]
+      icontype = "fas"
       icon = "fa-camera-retro"
       title = "Magna Etiam"
 
     [[params.block.item]]
-      icon = "fa-pencil"
+      icontype = "fas"
+      icon = "fa-pencil-alt"
       title = "Lorem Ipsum"
 
     [[params.block.item]]
+      icontype = "fas"
       icon = "fa-code"
       title = "Nulla Tempus"
 
     [[params.block.item]]
+      icontype = "fas"
       icon = "fa-coffee"
       title = "Sed Feugiat"
 
